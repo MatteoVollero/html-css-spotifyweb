@@ -1,0 +1,70 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.page-wrapper{
+  height: 100vh;
+  background-color: black;
+}
+
+/* HEADER */
+.debug-aside{
+  float: left;
+  width: 200px;
+  height: 100vh;
+  background-color: red;
+}
+
+.upgrade{
+  height: 100px;
+  margin-left: 200px;
+  background-color: blue;
+}
+
+.btn-upgrade{
+  float: right;
+  line-height: 100px;
+}
+
+.btn-upgrade a{
+  color: white;
+  text-decoration: none;
+}
+
+.main-list{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  list-style: none;
+}
+
+.main-list li a{
+  text-decoration: none;
+  color: white;
+}
+
+.playlist-list li a{
+  text-decoration: none;
+  color: white;
+}
+
+
+/* MAIN */
+.section-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: green;
+}
+
+.section-list ul{
+  list-style: none;
+  color: white;
+}
+
+.section-list li{
+  display: inline-block;
+}
+
+/* FOOTER */
