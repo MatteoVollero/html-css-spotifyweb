@@ -88,7 +88,7 @@
 .flex-item{
   width: 150px;
   height: 150px;
-  background-color: blue;
+  background-color: purple;
   padding: 15px;
 }
 
@@ -99,6 +99,11 @@
 
 .circle{
   border-radius: 90px;
+}
+
+.main-wrapper{
+  height: calc(100vh - 80px);
+  overflow-y: scroll;
 }
 
 /* FOOTER */
