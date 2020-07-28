@@ -22,8 +22,12 @@ header{
 }
 
 .main-nav ul li{
-  color: #fff;
+  /* color: #fff; */
   font-size: 11px;
+}
+
+.main-nav ul li:first-child{
+  color: #fff;
 }
 
 .main-nav img{
@@ -44,6 +48,7 @@ aside {
   flex-direction: column;
   height: calc(100% - 80px);
   width: 200px;
+  color: #6b6b6b;
   /* background-color: green; */
 }
 
@@ -62,9 +67,25 @@ aside {
 
 .playlist-title {
   color: #fff;
-  font-size: 14px;
+  font-size: 11px;
   margin-top: 20px;
   padding-left: 10px;
+}
+
+.playlist-title h3{
+  margin-bottom: 10px;
+}
+
+.playlist-title a{
+  margin-left: 5px;
+  text-decoration: none;
+  color: #a3a3a3;
+}
+
+.fa-plus-square{
+  color: #a3a3a3;
+  font-size: 30px;
+  vertical-align: middle;
 }
 
 .playlist-list {
@@ -74,10 +95,55 @@ aside {
 }
 
 .aside-bottom {
-  height: 80px;
+  height: auto;
   flex-shrink: 0;
   margin-top: auto;
+  padding-left: 10px;
+  padding-right: 10px;
   /* background-color: grey; */
+}
+
+.aside-bottom img{
+  height: 15px;
+  vertical-align: middle;
+}
+
+.circle img{
+  height: 20px;
+}
+
+.aside-bottom h3{
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.aside-bottom hr{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.aside-bottom a{
+  color:inherit;
+  font-size: 11px;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.circle{
+  float: left;
+  border-radius: 90px;
+  background-color: #808080;
+  overflow: hidden;
+  width: 17px;
+  height: 20px;
+  margin-bottom: 5px;
+}
+
+.circle img{
+  height: 20px;
 }
 
 .inner-wrapper{
@@ -108,19 +174,20 @@ aside {
 
 .main-list li a{
   text-decoration: none;
-  color: white;
+  /* color: white; */
 }
 
 
 .playlist-list li a{
   text-decoration: none;
-  color: white;
+  color: inherit;
   margin-top: 10px;
 }
 
 .playlist-list li{
   margin-top: 15px;
   font-size: 11px;
+  list-style: none;
 }
 
 .element{
