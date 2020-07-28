@@ -10,6 +10,11 @@
 }
 
 /* HEADER */
+.aside-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .debug-aside{
   float: left;
   width: 200px;
@@ -18,6 +23,11 @@
   position: fixed;
   top: 0;
   left: 0;
+}
+
+.inner-wrapper{
+  display: flex;
+  flex-direction: column;
 }
 
 .upgrade{
@@ -49,6 +59,22 @@
 .playlist-list li a{
   text-decoration: none;
   color: white;
+}
+
+.element{
+  display: flex;
+  flex-direction: column;
+}
+
+.scroll{
+
+  overflow-y: scroll;
+}
+
+.aside-footer{
+  width: 100%;
+  background-color: pink;
+  text-align: center;
 }
 
 
@@ -89,6 +115,8 @@
   height: 150px;
   background-color: purple;
   padding: 15px;
+  margin: 5px;
+  margin-left: 10px;
 }
 
 .container-flex ul li{
