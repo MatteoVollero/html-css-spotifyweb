@@ -6,12 +6,23 @@
 
 .page-wrapper{
   height: 100vh;
-  background-color: black;
 }
 
 /* HEADER */
 header{
   background-color: #000;
+}
+
+.fa-spotify{
+  color: #fff;
+  margin-bottom: 15px;
+  margin-top: 5px;
+  padding-left: 10px;
+  font-size: 25px;
+}
+
+.hidden{
+  display: none;
 }
 
 .logo {
@@ -49,7 +60,7 @@ aside {
   height: calc(100% - 80px);
   width: 200px;
   color: #6b6b6b;
-  /* background-color: green; */
+  background-color: #000;
 }
 
 .logo-size{
@@ -153,17 +164,23 @@ aside {
 
 .upgrade{
   height: 100px;
-  background-color: blue;
+  background-color: #080b12;
 }
 
 .btn-upgrade{
   float: right;
-  line-height: 100px;
+  line-height: 95px;
+  margin-right: 3px;
 }
 
 .btn-upgrade a{
   color: white;
+  border: 1px solid white;
+  border-radius: 15px;
+  padding: 7px 30px;
+  margin-right: 5px;
   text-decoration: none;
+  font-size: 14px;
 }
 
 .main-list{
@@ -232,7 +249,7 @@ aside {
 
 .main-margin{
   margin-left: 200px;
-  color: white;
+  background-color: #141922;
 }
 
 .flex-item{
@@ -269,4 +286,38 @@ aside {
   background-color: green;
   position: fixed;
   bottom: 0;
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 768px) {
+  .secondary-nav , .logo , .aside-bottom{
+    display: none;
+  }
+
+  .main-nav ul:first-child{
+    display: none;
+  }
+
+  .hidden{
+    display: block;
+  }
+
+  .hidden .circle{
+    margin-top: 20px;
+  }
+
+  .aside-bottom  .hidden{
+    display: block;
+  }
+
+  aside{
+    width: 50px;
+  }
+
+  .main-margin{
+    margin-left: 50px;
+  }
+
 }
