@@ -226,7 +226,7 @@ aside {
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  background-color: green;
+  /* background-color: green; */
   text-align: center;
 }
 
@@ -236,8 +236,23 @@ aside {
 }
 
 .section-list li{
+  padding: 5px 0;
   display: inline-block;
   margin-right: 40px;
+}
+
+.section-list li a{
+  text-decoration: none;
+  color: #797c81;
+}
+
+.selected{
+  width: 40px;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #adff2f;
+  margin-top: 3px;
+  margin-left: calc(50% - 20px);
 }
 
 .container-flex{
