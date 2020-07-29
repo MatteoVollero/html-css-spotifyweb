@@ -246,6 +246,28 @@ aside {
   color: #797c81;
 }
 
+h2{
+  margin-bottom: 10px;
+  margin-left: 10px;
+  color: #fff;
+  font-size: 20px;
+}
+
+h5{
+  font-size: 12px;
+}
+
+h6{
+  margin-top: 10px;
+}
+
+p{
+  margin-left: 10px;
+  margin-bottom: 10px;
+  color: #77797e;
+  font-size: 12px;
+}
+
 .selected{
   width: 40px;
   height: 4px;
@@ -258,8 +280,31 @@ aside {
 .container-flex{
   display: flex;
   flex-flow: row wrap;
-  background-color: grey;
+  /* background-color: grey; */
   margin-bottom: 30px;
+}
+
+.container-flex ul{
+  text-align: center;
+}
+
+.flex-title{
+  margin-top: 10px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container-flex h5{
+  margin-left: 10px;
+  color: #fff;
+}
+
+.container-flex h6{
+  margin-left: 10px;
+  color: #686b70;
 }
 
 .main-margin{
@@ -268,12 +313,41 @@ aside {
 }
 
 .flex-item{
+  position: relative;
   width: 150px;
   height: 150px;
   background-color: purple;
   padding: 15px;
   margin: 5px;
   margin-left: 10px;
+}
+
+.flex-item img{
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.fa-play-circle{
+  font-size: 40px;
+  margin-top: calc(50% - 20px);
+  color: #fff;
+}
+
+.flex-item:hover .overlay{
+  display: block;
 }
 
 .container-flex ul li{
